@@ -1,7 +1,7 @@
 # Virtual Patient Application
 
-A comprehensive medical education platform with React frontend and FastAPI backend
-
+A comprehensive medical education platform with React frontend and FastAPI backend.**As this Application is a module in Main Application of VIP project, I have included the code only for Virtual Patient Application. 
+**
 ## Quick Start for Students
 
 ### Prerequisites
