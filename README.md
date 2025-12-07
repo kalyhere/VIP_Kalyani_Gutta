@@ -3,7 +3,7 @@
 A comprehensive medical education platform with React frontend and FastAPI backend.
 ##As this Application is a module in Main Application of VIP project, I have included the code only for Virtual Patient Application. 
 
-**
+
 ## .env file is not included as it holds the API keys for all the tools linked to the application for security reasons. Arizona Simulation and Training Education Center holds the right for the licenses
 
 ### Prerequisites
