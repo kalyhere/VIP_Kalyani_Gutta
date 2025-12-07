@@ -1,6 +1,6 @@
-# AIMMS Web Platform - Monorepo
+# Virtual Patient Application
 
-A comprehensive medical education platform with React frontend and FastAPI backend, featuring real-time AIMHEI transcript processing with job queues.
+A comprehensive medical education platform with React frontend and FastAPI backend
 
 ## Quick Start for Students
 
