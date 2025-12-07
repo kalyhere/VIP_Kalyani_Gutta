@@ -1,9 +1,0 @@
-{
-  "onlyChanged": true,
-  "projectId": "Project:6908f745eba02b07e652df60",
-  "storybookConfigDir": "../../.storybook",
-  "storybookBuildDir": "storybook-static",
-  "logFile": ".chromatic/build-storybook.log",
-  "diagnosticsFile": ".chromatic/diagnostics.json",
-  "zip": true
-}
