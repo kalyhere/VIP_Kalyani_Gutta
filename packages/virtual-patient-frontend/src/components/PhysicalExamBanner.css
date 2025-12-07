@@ -1,0 +1,121 @@
+.physical-exam-banner {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15000;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.physical-exam-banner-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  /* Matching chat message styling - Arizona Red */
+  background: #AB0520;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  min-width: 500px;
+  max-width: 700px;
+}
+
+.physical-exam-banner-icon {
+  flex-shrink: 0;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.physical-exam-banner-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.physical-exam-banner-text strong {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.physical-exam-banner-text span {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.physical-exam-banner-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.physical-exam-banner-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.physical-exam-banner-btn.primary {
+  background: white;
+  color: #AB0520;
+  font-weight: 600;
+}
+
+.physical-exam-banner-btn.primary:hover {
+  background: #F8FAFC;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.physical-exam-banner-btn.secondary {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.physical-exam-banner-btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .physical-exam-banner-content {
+    min-width: auto;
+    max-width: 90vw;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .physical-exam-banner-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .physical-exam-banner-btn {
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,11 @@
+# YOLOv8 dataset configuration for suture detection
+# Paths relative to the dataset root directory
+
+path: /app/data  # dataset root dir
+train: train/images  # train images (relative to 'path') 45 images
+val: val/images  # val images (relative to 'path') 2 images
+test: test/images  # test images (optional) 1 image
+
+# Classes
+nc: 3  # number of classes
+names: ['suture_good', 'suture_loose', 'suture_tight']  # class names

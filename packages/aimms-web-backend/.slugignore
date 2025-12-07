@@ -1,0 +1,5 @@
+.git
+.venv
+Makefile
+README.md
+test.db

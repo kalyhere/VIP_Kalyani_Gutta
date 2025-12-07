@@ -1,0 +1,17 @@
+[
+  {
+    "origin": [
+      "https://virtual-patient-frontend.vercel.app",
+      "https://virtual-patient-frontend-*.vercel.app",
+      "https://virtual-patient-frontend-*-uaaidset-4275s-projects.vercel.app",
+      "https://*.vercel.app",
+      "http://localhost:5174"
+    ],
+    "method": ["GET", "HEAD", "OPTIONS"],
+    "responseHeader": ["Content-Type", "Content-Length", "Date", "Server", "x-goog-*", "Accept-Ranges",
+      "Content-Range",
+      "ETag",
+      "Last-Modified"],
+    "maxAgeSeconds": 3600
+  }
+] 

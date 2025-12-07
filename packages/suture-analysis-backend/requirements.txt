@@ -1,0 +1,32 @@
+# FastAPI and web framework
+fastapi>=0.68.0
+uvicorn>=0.15.0
+pydantic>=1.8.0
+python-multipart>=0.0.5
+python-dotenv>=0.19.0
+
+# Core dependencies first
+numpy>=1.21.0,<2.0.0
+
+
+pillow>=9.0.0
+pillow-heif>=0.10.0  # Support for iPhone HEIC/HEIF images
+
+# Essential ML libraries (using well-tested versions)
+torch==2.6.0
+torchvision==0.21.0
+opencv-python-headless==4.8.1.78
+scipy>=1.9.0
+ultralytics==8.0.196
+
+# Additional ML libraries needed by the code
+xgboost>=1.7.0
+scikit-learn>=1.0.0
+
+# Essential utilities
+pyyaml>=6.0.0
+tqdm>=4.65.0
+
+# Auth and JWT (required by the code)
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4

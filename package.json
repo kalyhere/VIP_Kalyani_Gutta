@@ -1,0 +1,55 @@
+{
+  "name": "aimms-web",
+  "version": "1.0.0",
+  "description": "AIMMS Web Platform - Monorepo for Frontend and Backend",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "docker compose -f docker-compose.dev.yml up postgres redis backend worker frontend virtual-patient-backend virtual-patient-frontend suture-analysis-backend debrief-backend pgadmin",
+    "dev:build": "docker compose -f docker-compose.dev.yml up --build postgres redis backend worker frontend virtual-patient-backend virtual-patient-frontend suture-analysis-backend debrief-backend pgadmin",
+    "dev:clean": "docker compose -f docker-compose.dev.yml down -v",
+    "aimms": "docker compose -f docker-compose.dev.yml up postgres redis backend worker frontend pgadmin",
+    "aimms:build": "docker compose -f docker-compose.dev.yml up --build postgres redis backend worker frontend pgadmin",
+    "virtual-patient:dev": "docker compose -f docker-compose.dev.yml up --no-deps postgres redis virtual-patient-backend virtual-patient-frontend",
+    "virtual-patient:dev:build": "docker compose -f docker-compose.dev.yml up --build --no-deps postgres redis virtual-patient-backend virtual-patient-frontend",
+    "virtual-patient:dev:clean": "docker compose -f docker-compose.dev.yml down virtual-patient-backend virtual-patient-frontend -v",
+    "virtual-patient-frontend:dev": "cd packages/virtual-patient-frontend && npm run dev",
+    "virtual-patient-backend:dev": "cd packages/virtual-patient-backend && npm run dev",
+    "suture:dev": "docker compose -f docker-compose.dev.yml up postgres backend frontend suture-analysis-backend",
+    "suture:dev:build": "docker compose -f docker-compose.dev.yml up --build postgres backend frontend suture-analysis-backend",
+    "suture:dev:clean": "docker compose -f docker-compose.dev.yml down postgres backend frontend suture-analysis-backend -v",
+    "debrief:dev": "docker compose -f docker-compose.dev.yml up postgres backend frontend debrief-backend",
+    "debrief:dev:build": "docker compose -f docker-compose.dev.yml up --build postgres backend frontend debrief-backend",
+    "debrief:dev:clean": "docker compose -f docker-compose.dev.yml down postgres backend frontend debrief-backend -v",
+    "stop": "docker compose -f docker-compose.dev.yml down",
+    "logs": "docker compose -f docker-compose.dev.yml logs -f",
+    "prune": "docker system prune -a --volumes -f && docker image prune -a -f && docker container prune -f && docker network prune -f && docker volume prune -f",
+    "deploy:frontend": "cd packages/aimms-web-frontend && vercel deploy --prod"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "overrides": {
+    "three": "^0.178.0",
+    "@mui/system": "6.5.0",
+    "@mui/private-theming": "6.4.9",
+    "@mui/styled-engine": "6.5.0",
+    "@mui/utils": "6.4.9",
+    "react-is": "18.3.1",
+    "**": {
+      "react-is": "18.3.1"
+    }
+  },
+  "keywords": [
+    "aimms",
+    "medical",
+    "education",
+    "fastapi",
+    "react",
+    "docker"
+  ],
+  "author": "UA-AIDSET",
+  "license": "MIT",
+  "packageManager": "npm@11.4.2"
+}

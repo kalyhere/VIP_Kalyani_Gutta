@@ -1,0 +1,179 @@
+name: Deploy Applications
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  detect-changes:
+    runs-on: ubuntu-latest
+    outputs:
+      backend: ${{ steps.changes.outputs.backend }}
+      frontend: ${{ steps.changes.outputs.frontend }}
+      virtual-patient-backend: ${{ steps.changes.outputs.virtual-patient-backend }}
+      virtual-patient-frontend: ${{ steps.changes.outputs.virtual-patient-frontend }}
+      suture-analysis-backend: ${{ steps.changes.outputs.suture-analysis-backend }}
+      debrief-backend: ${{ steps.changes.outputs.debrief-backend }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: dorny/paths-filter@v2
+        id: changes
+        with:
+          filters: |
+            backend:
+              - 'packages/aimms-web-backend/**'
+            frontend:
+              - 'packages/aimms-web-frontend/**'
+            virtual-patient-backend:
+              - 'packages/virtual-patient-backend/**'
+            virtual-patient-frontend:
+              - 'packages/virtual-patient-frontend/**'
+            suture-analysis-backend:
+              - 'packages/suture-analysis-backend/**'
+            debrief-backend:
+              - 'packages/debrief-backend/**'
+
+  deploy-backend:
+    needs: detect-changes
+    if: needs.detect-changes.outputs.backend == 'true' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Heroku CLI
+        run: |
+          curl https://cli-assets.heroku.com/install.sh | sh
+
+      - name: Login to Heroku Container Registry
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+        run: |
+          echo $HEROKU_API_KEY | docker login --username=_ --password-stdin registry.heroku.com
+
+      - name: Build and Push Docker Image
+        env:
+          HEROKU_APP_NAME: ${{ secrets.HEROKU_BACKEND_STAGING_APP_NAME }}
+        run: |
+          cd packages/aimms-web-backend
+          docker build -t registry.heroku.com/$HEROKU_APP_NAME/web .
+          docker push registry.heroku.com/$HEROKU_APP_NAME/web
+
+      - name: Set Container Stack and Release to Heroku
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+          HEROKU_APP_NAME: ${{ secrets.HEROKU_BACKEND_STAGING_APP_NAME }}
+        run: |
+          heroku stack:set container --app $HEROKU_APP_NAME
+          heroku container:release web --app $HEROKU_APP_NAME
+
+  deploy-virtual-patient-backend:
+    needs: detect-changes
+    if: needs.detect-changes.outputs.virtual-patient-backend == 'true' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Heroku CLI
+        run: |
+          curl https://cli-assets.heroku.com/install.sh | sh
+
+      - name: Login to Heroku Container Registry
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+        run: |
+          echo $HEROKU_API_KEY | docker login --username=_ --password-stdin registry.heroku.com
+
+      - name: Build and Push Docker Image
+        env:
+          HEROKU_APP_NAME: ${{ secrets.HEROKU_VP_BACKEND_STAGING_APP_NAME }}
+        run: |
+          cd packages/virtual-patient-backend
+          docker build -t registry.heroku.com/$HEROKU_APP_NAME/web .
+          docker push registry.heroku.com/$HEROKU_APP_NAME/web
+
+      - name: Set Container Stack and Release to Heroku
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+          HEROKU_APP_NAME: ${{ secrets.HEROKU_VP_BACKEND_STAGING_APP_NAME }}
+        run: |
+          heroku stack:set container --app $HEROKU_APP_NAME
+          heroku container:release web --app $HEROKU_APP_NAME
+
+  deploy-suture-analysis-backend:
+    needs: detect-changes
+    if: needs.detect-changes.outputs.suture-analysis-backend == 'true' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Heroku CLI
+        run: |
+          curl https://cli-assets.heroku.com/install.sh | sh
+
+      - name: Login to Heroku Container Registry
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+        run: |
+          echo $HEROKU_API_KEY | docker login --username=_ --password-stdin registry.heroku.com
+
+      - name: Build and Push Docker Image
+        env:
+          HEROKU_APP_NAME: ${{ secrets.HEROKU_SUTURE_ANALYSIS_BACKEND_STAGING_APP_NAME }}
+        run: |
+          cd packages/suture-analysis-backend
+          docker build -t registry.heroku.com/$HEROKU_APP_NAME/web .
+          docker push registry.heroku.com/$HEROKU_APP_NAME/web
+
+      - name: Release to Heroku
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+          HEROKU_APP_NAME: ${{ secrets.HEROKU_SUTURE_ANALYSIS_BACKEND_STAGING_APP_NAME }}
+        run: |
+          heroku container:release web --app $HEROKU_APP_NAME
+
+  # TODO: Uncomment when ready to deploy debrief-backend to production
+  # When added, set the HEROKU_DEBRIEF_BACKEND_STAGING_APP_NAME secret in GitHub Actions and create the heroku pipeline
+  # deploy-debrief-backend:
+  #   needs: detect-changes
+  #   if: needs.detect-changes.outputs.debrief-backend == 'true' && github.ref == 'refs/heads/main'
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #       with:
+  #         fetch-depth: 0
+
+  #     - name: Install Heroku CLI
+  #       run: |
+  #         curl https://cli-assets.heroku.com/install.sh | sh
+
+  #     - name: Login to Heroku Container Registry
+  #       env:
+  #         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+  #       run: |
+  #         echo $HEROKU_API_KEY | docker login --username=_ --password-stdin registry.heroku.com
+
+  #     - name: Build and Push Docker Image
+  #       env:
+  #         HEROKU_APP_NAME: ${{ secrets.HEROKU_DEBRIEF_BACKEND_STAGING_APP_NAME }}
+  #       run: |
+  #         cd packages/debrief-backend
+  #         docker build -t registry.heroku.com/$HEROKU_APP_NAME/web .
+  #         docker push registry.heroku.com/$HEROKU_APP_NAME/web
+
+  #     - name: Release to Heroku
+  #       env:
+  #         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+  #         HEROKU_APP_NAME: ${{ secrets.HEROKU_DEBRIEF_BACKEND_STAGING_APP_NAME }}
+  #       run: |
+  #         heroku container:release web --app $HEROKU_APP_NAME
+
+  # Frontend deployments are handled by Vercel's GitHub integration

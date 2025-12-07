@@ -1,0 +1,674 @@
+[Doctor]
+So, good morning.
+
+[Patient]
+Good morning.
+
+[Doctor]
+I'm John. John brown. I'm one of the medical students on the Um, emergency department service right now? And i've been asked to come in here and and take a look at you for dr. Smith who's the attending? Um and so i would was going to take some time and ask you what was going on and try and coordinate that into some notes for him if that's okay with you.
+
+[Patient]
+Yes, sure, that'd be great. 
+
+[Doctor]
+Well first, as i said, i'm john brown from the emergency department. I'm a third year medical student and i want to double check Your jane doe. Is that correct,
+
+[Patient]
+Correct?
+
+[Doctor]
+And could you give me your date of birth?
+
+[Patient]
+Sure. It is. 210. Of. 82.
+
+[Doctor]
+So February...
+
+[Patient]
+10
+
+[Doctor]
+10th of 1982, right? And i see you have a bracelet on there. Could I just take a brief look at that to see her medical record Number? 
+
+[Patient]
+sure.
+
+[Doctor]
+Okay So let me just see if i got this, right, so it's zero, nine two. Five, four sixty-eight 41. Thank you, good. I just wanted to make sure they had the right person. I want to make sure first that you're comfortable, you are comfortable right now. You need coffee or anything. 
+
+[Patient]
+No, I'm fine.
+
+[Doctor]
+Okay because this will take a few minutes and I'll just want to make sure comfortable and don't need to use the head or anything like that.
+
+[Patient]
+Okay.
+
+[Doctor]
+Okay. Um, so tell me what brought you into the emergency department today.
+
+[Patient]
+I've Really had a headache. I pat it for. Uh, a couple days now and it's really bad. I just i'm having a really hard time.
+
+[Doctor]
+I'm sorry to hear that. When you say bad um, Like, could you describe it for me?
+
+[Patient]
+Yeah, i've had it for A really severe the last day or so, but i've never had one. That was this bad. I've had migraines before, but nothing like this.
+
+[Doctor]
+So You had a history of migraines. Did you do take medication for migraines?
+
+[Patient]
+No, i don't.
+
+[Doctor]
+Okay. All right. Um, but this does, does this feel like your migraine are very different?
+
+[Patient]
+This feels like, It feels different. It feels more severe.
+
+[Doctor]
+Okay? So if you were to give this like a on a scale of one out of 10 and a 10 would be the worst headache that you've ever felt. And then i, i would like to know what's this one? Compared to your migraines.
+
+[Patient]
+Yeah, i think i've i've you know, i had headaches before but Not compared to this, like the My headache is, Affecting everything. My daily life. I just can't I can't stand the lights, it's Makes it worse. 
+
+[Doctor]
+So tell me about the the What we call that photophobia, but it means the lights, bothering. You tell me a little bit about the, the photophobia. Well,
+
+[Patient]
+It just seemed bright lights, make it worse. It makes like a stabbing knife pain in my head. 
+
+[Doctor]
+And What do you do to make that better?
+
+[Patient]
+I've Just been lying in the dark with the blinds closed and no TV no cell phone. Nothing.
+
+[Doctor]
+Okay. When, when you and the headache, is it constant does it? Is it coming go? What's the character of them?
+
+[Patient]
+No, it's pretty much just constant. It's like, from my forehead down to like my temple region. Um, i don't know. I don't know why i have it. It's kind of been making me sick to my stomach. And it just hasn't gone away. Usually I'll have a headache and it'll go away. This is not going away.
+
+[Doctor]
+So if i understand this is, you have it in the front, you have it towards the temples and then it's Also associated with problems handling light. Also it sounds like also some nausea and possibly some vomiting.
+
+[Patient]
+Yeah.
+
+[Doctor]
+Um, You said it was in the front and a temples. Does it go anywhere else? Does it? Radiate anywhere else? 
+
+[Patient]
+Yeah, I kind of goes back to the back of my head. Okay.
+
+[Doctor]
+All right. To the back here head, how's your neck feel?
+
+[Patient]
+Stiff.
+
+[Doctor]
+Okay, So it's difficult. Is it harder for you to move? When you move, does that bother it?
+
+[Patient]
+Yeah, it just seems like any kind of Um, You know, just everything is affected when i have this, you know, this headache that i have right now just Seems like it's taken over my life. 
+
+[Doctor]
+Okay. Um, and then tell me the very first time you were aware of this bad headache. When did it start?
+
+[Patient]
+Um, it kind of started suddenly In the morning. Then it was just throbbing. And then i thought, okay. Well You know, i've had headaches before but nothing like this this is really unbearable.
+
+[Doctor]
+So when you say it started throbbing but then it got more. It got worse in severity over time.
+
+[Patient]
+Yeah, just it was a sudden.
+
+[Doctor]
+Um, did you take anything to try and make it better?
+
+[Patient]
+Um, I don't really take a lot of medication.  
+
+[Doctor]
+okay. So do you know, ever take Tylenol or aspirin or anything like that for headaches? 
+
+[Patient]
+Yes, I've taken that.
+
+[Doctor]
+Did You did you for this one?
+
+[Patient]
+Yeah, i took a couple of um, ibuprofen but It didn't touch it. 
+
+[Doctor]
+Okay, and how long ago did you take that ibuprofen?
+
+[Patient]
+Uh, probably about four hours ago? 
+
+[Doctor]
+Okay. All right. Good to know. Um, Um besides that is there anything you can think of that, makes it better or makes it worse?
+
+[Patient]
+Well, being in a dark room with nothing on in my head, buried in the covers. Seems to alleviate it a little bit, but It's It's pretty bad.
+
+[Doctor]
+You can try anything like heating pad or anything. Other things to maybe help with the symptoms.
+
+[Patient]
+No, i haven't
+
+[Doctor]
+Great. I'm just checking to make sure i've covered the bases. Is there anything else that you can think of About the headache that i should know.
+
+[Patient]
+No, i don't think so.
+
+[Doctor]
+Well, thank you very much, miss. Do, if it's all right with you, i'm going to move on. Um, and ask you a couple questions about your medical history. The first thing i'm going to ask is, have you ever been in the hospital?
+
+[Patient]
+Um, no. Well i actually had an appendectomy before.
+
+[Doctor]
+Okay? And how long ago was the appendectomy
+
+[Patient]
+Um, You know. It's been a little bit.
+
+[Doctor]
+Like more than 10 years, yeah?
+
+[Patient]
+Okay.
+
+[Doctor]
+Can you remember whether it was an open procedure with an incision in your right lower quadrant, meaning the lower part of your belly there on the right side or whether it was a small done with a scope of some kind? 
+
+[Patient]
+Yeah, I had little little incisions on my belly.
+
+[Doctor]
+So It means it was done with the scope and that's good to know. Okay. And did you recover quickly from that? From the appendectomy?
+
+[Patient]
+Yeah. Okay it was easy. 
+
+[Doctor]
+How were you in the hospital for?
+
+[Patient]
+Um, i was basically outpatient. 
+
+[Doctor]
+Okay. And do you remember where it was at here or is that another hospital?
+
+[Patient]
+Oh, it wasn't at this hospital. Okay,
+
+[Doctor]
+Where can you tell me what hospital was in?
+
+[Patient]
+Uh Yeah. Was that Saint Mary's?
+
+[Doctor]
+Okay, great. Um, and that's the only time that you've been a hospitalized that you can remember. 
+
+[Patient]
+Yes.
+
+[Doctor]
+Okay. Yeah, i, i, i'm, i know i'm looking ahead and it says you've been, you've had. I think, two children. Is that correct? Oh,
+
+[Patient]
+Right. Yes.
+
+[Doctor]
+So you mean you delivered in a hospital or did you deliver at home?
+
+[Patient]
+Um, well, one of them i delivered in the hospital and the other one was at home.
+
+[Doctor]
+Um, Okay, i'm i'll come back to that but other than that, other than the actual delivery. And the appendectomy, are there any other hospitalizations that you've had? 
+
+[Patient]
+No, That's it.
+
+[Doctor]
+Okay And um, are there any illnesses that you are under the care for a doctor, for on a chronic basis? Meaning these are ongoing problems that you see a physician for it?
+
+[Patient]
+No.
+
+[Doctor]
+Um, and Let me switch gear. So there there so you don't see a doctor, you go, do you, do you see doctor on a regular basis like every year for a well, check up.
+
+[Patient]
+Yeah, i do recently my primary care provider. Retired. So i'm actually looking for one right now.
+
+[Doctor]
+But when you've gone to see your primary care doctor, it's been just for a well check up. It hasn't been for any specific problems. No.
+
+[Patient]
+I'm pretty healthy good.
+
+[Doctor]
+I'm glad to hear that. Um, that's always nice to know. I like to find out a little bit about any allergies that you might have. 
+
+[Patient]
+Oh Yeah. I have a severe. Allergy to penicillin
+
+[Doctor]
+To penicillin and do you. You know what, what your reaction was do you remember? I
+
+[Patient]
+Had hives all over my body. 
+
+[Doctor]
+All Right. Um, And if you got you, if you've taken since that time you had the documented penicillin allergy, do you know what kind of antibiotics they put you on?
+
+[Patient]
+I don't remember. Okay.
+
+[Doctor]
+All right, that's good. Now, you don't need to. I just, uh, was curious. Sometimes people remember the medication that they took and that just helps me Um, Any other allergies besides penicillin?
+
+[Patient]
+No.
+
+[Doctor]
+Anything like hay fever or Food allergies or contact allergies.
+
+[Patient]
+I do have a little seasonal allergies.
+
+[Doctor]
+You take anything for that.
+
+[Patient]
+Uh, sometimes i'll just, you know, Um, take a little bit of a Benadryl or half of Benadryl.
+
+[Doctor]
+Okay, great. Um, So, Let me ask you a little bit about your family's background. First are your mom and and dad alive?
+
+[Patient]
+Yes. 
+
+[Doctor]
+Okay. And um And are they in good health? 
+
+[Patient]
+I hope they are good.
+
+[Doctor]
+Anybody have a history of headaches in your family.
+
+[Patient]
+Um, My mom has a history of migraines.
+
+[Doctor]
+Of migraines. Does she take anything for them or just?
+
+[Patient]
+I don't know if she does actually.
+
+[Doctor]
+Okay Any other health problems in the family?
+
+[Patient]
+Um, i know my my dad has some hypertension.
+
+[Doctor]
+ Okay. And um Do you have any siblings?
+
+[Patient]
+I do not, i'm an only child. 
+
+[Doctor]
+So, No other in other family. Medical problems that you're aware of
+
+[Patient]
+None.
+
+[Doctor]
+Okay, great. And I'm going to ask you some questions. Sometimes people are A little nervous about this because it sort of sounds like we're prying, but we're really trying to sort just make sure we cover all the bases. So if you have a question about why i'm asking something, please just stop me. Um, i just wanted to know now, tell me a little bit about your living situation. You're right now.
+
+[Patient]
+Oh, um yeah. I Live with my, my husband. Um, we have a home here.
+
+[Doctor]
+May ask how long you've been married.
+
+[Patient]
+Sure. Yeah. I've been married for 12 years. Okay?
+
+[Doctor]
+And do you, and you have any children? You said you had one?
+
+[Patient]
+Yeah, i have two.
+
+[Doctor]
+Two then tell me what their their names are.
+
+[Patient]
+Oh joseph and sarah.
+
+[Doctor]
+Okay, how old are Joseph? And Sarah?
+
+[Patient]
+Uh they are eight and seven now.
+
+[Doctor]
+So they must keep you pretty busy. 
+
+[Patient]
+Very.
+
+[Doctor]
+Are they in good health?
+
+[Patient]
+Yes, good.
+
+[Doctor]
+All right, and Uh, tell me a little bit about your, your education. Do you go to finish high school? Did you go to college? Did you go to a trade school or anything like that?
+
+[Patient]
+Uh, i went to um, college and then but now i stay at home, mom. Okay. Um, i work On the side. Um, and take care of the kids.
+
+[Doctor]
+What kind of work?
+
+[Patient]
+Um, well i do some software development.
+
+[Doctor]
+So what was your background in your educational background and when you went to school.
+
+[Patient]
+Oh Uh MIS. 
+
+[Doctor]
+Okay, All right. And what did your husband do for a living?
+
+[Patient]
+Um, he's a contractor. 
+
+[Doctor]
+Okay. All right. And um, Uh, and this situation, how about, you know, those stress levels, i mean, raising to young kids and doing software and all the rest of that, that can be pretty stressful. Is that something? That's hard to balance?
+
+[Patient]
+Yeah its pretty stressful sometimes because, you know, the kids are, are home, and i have to manage them and try to work and She gets chaotic.
+
+[Doctor]
+Um, do you happen to smoke?
+
+[Patient]
+No. 
+
+[Doctor]
+Okay. Have you ever smoked
+
+[Patient]
+Never. 
+
+[Doctor]
+Okay, What about alcohol? Do you drink alcohol? Like, wine or beer.
+
+[Patient]
+Usually on the weekends, you know, especially if we get together with friends or other families. 
+
+[Doctor]
+So Only like, on social social, occassions.
+
+[Patient]
+Yeah.
+
+[Doctor]
+That's okay. And you drink, you know, how much do you think you drink? One, two glasses more than that.
+
+[Patient]
+Um, i probably just drink one glass. No more than two.
+
+[Doctor]
+How about Recreational drugs, like marijuana cocaine, nothing else, nothing. No. Have you ever?
+
+[Patient]
+No.
+
+[Doctor]
+Okay, good. Um, and let me delve into a little bit about. I've this is always a little uncomfortable. What i just asking about, is there anything about your relationship with your husband? And i should know about anything about your sexual relationship. You think i would as important for me to know, sometimes people have had headaches during sexual relations and they forget to mention that But if there's anything that you think is relevant, please, just let me know. Otherwise we'll move on. 
+
+[Patient]
+No.
+
+[Doctor]
+Okay. So in terms of medications, do you take any prescription medications? 
+
+[Patient]
+No. 
+
+[Doctor]
+Okay um when you said that you take some Benadryl occasionally but you took a little bit of Advil, i think he said for your headache. Was that right?
+
+[Patient]
+Yeah, ibuprofen.
+
+[Doctor]
+Ibuprofen. Well, thanks for correcting me there. Um, anything else in terms of over-the-counter medications?
+
+[Patient]
+Um, i take a multivitamin. 
+
+[Doctor]
+Okay, Anything besides multivitamin.
+
+[Patient]
+No.
+
+[Doctor]
+Any herbs or supplements, or...
+
+[Patient]
+No.
+
+[Doctor]
+Okay, All right. No. Um And in terms of, Vaccinations and immunizations, are you up to date on? For example, on your things like polio tetanus? Um, i don't know where you stand with covid vaccinations and things like that. Can you fill me in?
+
+[Patient]
+I'm up to date in all the recommended ones. 
+
+[Doctor]
+Okay, All right. Um, have you had gotten a new RSV? Vaccination. 
+
+[Patient]
+No.
+
+[Doctor]
+Okay. And Also the ones for shingles by chance.
+
+[Patient]
+No. 
+
+[Doctor]
+Okay. Because you would be a little young for that but i just wanted to check for Them. In terms of your Reproductive cycle. And any issues there, it's been pretty...
+
+[Patient]
+I'm like clockwork.
+
+[Doctor]
+Great. Okay. Um, just the two pregnancies and the two births or more than... 
+
+[Patient]
+No, That's it. 
+
+[Doctor]
+Okay. Um, and you happen to see a gynecologist on a regular basis. 
+
+[Patient]
+I Usually, for my annual.
+
+[Doctor]
+Your Annual, okay. And, and That they do swabs and things like that for you regularly. Okay. So let me just run down. This is list is kind of boring, but we want to make sure we didn't miss anything. So first thing i want to know is in terms of things like fatigue, your energy level, Um, any changes there?
+
+[Patient]
+No, just since i've had the headache i'm pretty perfect sense.
+
+[Doctor]
+No history of um unintended weight loss or weight gain. 
+
+[Patient]
+No.
+
+[Doctor]
+Okay, any difficulty sleeping?
+
+[Patient]
+No.
+
+[Doctor]
+Night Sweats? 
+
+[Patient]
+No.
+
+[Doctor]
+fevers
+
+[Patient]
+No.
+
+[Doctor]
+Okay. Um, anything related to your vision? Your smell? Back of your throat. Your hearing any problems there.
+
+[Patient]
+No, just just the bright lights. Have been really bothering and loud noises my head hurt more. 
+
+[Doctor]
+Well, That's a good. I forgot to ask that. Thank you. Um, any problems with your your heart?
+
+[Patient]
+No.
+
+[Doctor]
+Okay. Any problems with a circulation and Limbs.
+
+[Patient]
+No. 
+
+[Doctor]
+Okay. And how about uh any problems with respiratory? Your lung status. Your ability to breathe.
+
+[Patient]
+Nope. 
+
+[Doctor]
+Okay. I'm gonna move on to the gastrointestinal tract. So this is just asking about problems with digestion or passage of food. Anything with that?
+
+[Patient]
+No, Just the nausea, and some vomiting.
+
+[Doctor]
+And that's actually just this one interval. It's not something you have commonly.
+
+[Patient]
+No.
+
+[Doctor]
+And then any problems with urination? 
+
+[Patient]
+No.
+
+[Doctor]
+Okay, Um, And then, how about? Issues with your joints. Your bones, anything. That i need to know there, like, arthritis or things that painful joints, anything like that?
+
+[Patient]
+No. 
+
+[Doctor]
+Okay. Um, In, in the past, have there been any issues with things like your Level of red blood cells, or what's going on in your, in your white, blood cell, count anything like that, that ring a bell. 
+
+[Patient]
+Um, No.
+
+[Doctor]
+Okay, good. How about hormonal? And i'm talking now about, When we talk remote, i'm not talking about necessarily with hormones that you take for birth control. Although, that would be important if you do, i didn't ask you what you were doing for birth control. But i should
+
+[Patient]
+Oh, Yeah, i i do take a Um, birth control. 
+
+[Doctor]
+Okay. And you, you know what it's it is, is it a progesterone? Is it a...
+
+[Patient]
+It, uh, it's a combination.
+
+[Doctor]
+Okay. All right. Um, Besides that, any other problems with things like your thyroid? Um, other the, those would all be sort of endocrine problems if you will.
+
+[Patient]
+No, nothing.
+
+[Doctor]
+And then, Last but not least, how about your You're thinking your emotional state has that been any issues there or any problems there?
+
+[Patient]
+Um, just You know, just i'm a little stressed, right.
+
+[Doctor]
+Have you ever sought professional help for stress management? 
+
+[Patient]
+No, I just figured it's, you know, kind of that time of life. And when you have kids and trying to work.
+
+[Doctor]
+You mean in terms of what point of lifestyle where you are right now?
+
+[Patient]
+Yeah.
+
+[Doctor]
+Okay, Because you know, there's sometimes people do feel overwhelmed and if they do we often recommend that they do not talk to somebody about it because There's no reason why you should be feel like you're alone when it comes to that. Okay, so so if i can just go over for one more moment here, i understand correctly. Um, you've had this headache going on now, about a day and a half. They're abouts?
+
+[Patient]
+Right? 
+
+[Doctor]
+Okay. And it's been unusual. It's very different from what you had before and a way of migraines, this one is been much more severe. It's been going from the front of the head to the sides of the head and also radiating it to your neck. And it's also been associated with you, inability to tolerate light, and loud noises and also i've been associated with nausea and vomiting.
+
+[Patient]
+Yeah.
+
+[Doctor]
+Is that right? And you have no other history of any kind of vascular problems hypertension. Or rhythms or anything like that. Um, You know, and we'll, we'll obviously, Do an exam. So that we focus on some of the things that we're we need to look at Um, but it sounds like that's the major problem and we're going to try and make you comfortable so that we get these headaches under better control. But also to figure out is this just a variant of some kind of migraine is this attention headache? Is this something more? Seriously, we need to worry about. And we'll, we'll know that once we get a little bit more information from the physical examination. So What will happen now, is that dr. Jones will. Smith will come in and take a look at you because we don't want to have to do. Multiple exams on you, that's a little stressful. So They'll be in to take a look at you and when that'll complete our the first part of the evaluation. But before i go, i want to make sure i've understood what your problems are and if there's anything more you want to tell me or if you have any questions?
+
+[Patient]
+No, i don't have any questions. I just i'm one question would be like, how long will this take? Because i have to pick up my kids from school.
+
+[Doctor]
+Sure. And i can understand that, that's oppressing issue. We'll try and know a little bit more. Once we do the physical exam and what the workup's going to be meaning, what other tests we might want to do. Usually, we like to do a couple of tests when we're dealing with bad headache like this. Um, so we'll try and get you a better understanding. Once we know the tests that we're going to order and how long Um, but i can tell you we try and get you through as quickly as possible. We'll try and make sure we keep you. I a Apprised of the schedule. 
+
+[Patient]
+Okay.
+
+[Doctor]
+Okay. 
+
+[Patient]
+Thank you. 
+
+[Doctor]
+All right, you bet. Thank you. Thanks for being so patient with me.

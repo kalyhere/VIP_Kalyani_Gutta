@@ -1,0 +1,15 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "AIMMS Local Database",
+      "Group": "Servers",
+      "Host": "postgres",
+      "Port": 5432,
+      "MaintenanceDB": "aimms_web",
+      "Username": "aimms_user",
+      "Password": "dev",
+      "SSLMode": "prefer",
+      "Comment": "Docker local database - simple dev password"
+    }
+  }
+}

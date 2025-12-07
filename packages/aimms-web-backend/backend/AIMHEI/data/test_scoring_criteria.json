@@ -1,0 +1,19 @@
+{
+    "Information Section": {
+        "Section 1: Introduction": {
+            "Did the HCP give their first name?":"",
+            "Did the HCP give their last name?":"reference: Did the HCP give their first name?",
+            "Did the HCP give their title?":""
+        },
+        "Section 2: Present Illness": {
+            "Did the HCP proceed through a structured interview process that clearly addressed the history of present illness?":"",
+            "Did the HCP offer the patient an opportunity in the first 10 exchanges of the interview to state the purpose of the visit in his or her own words?":"",
+            "Did the HCP query the patient about the date and time symptoms first began?":""
+        }
+    },
+    "Skill Section": {
+        "Politeness Scoring":"",
+        "Empathy Scoring":"",
+        "Medical Terminology Scoring":""
+    }
+}

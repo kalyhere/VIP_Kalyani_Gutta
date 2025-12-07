@@ -1,0 +1,1022 @@
+{
+  "version": "1.0",
+  "timestamp": "2024-12-30T16:04:27.909Z",
+  "sections": [
+    {
+      "id": "section-1735568863993",
+      "title": "Section 1: Case Summary",
+      "tables": [
+        {
+          "id": "table-1735568901365",
+          "title": "Case Title",
+          "hasHeader": false,
+          "columns": 2,
+          "rows": [
+            {
+              "id": "row-1735568901365-0",
+              "cells": [
+                {
+                  "id": "cell-1735568901365-0-0",
+                  "content": "Scenario Title:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735568901365-0-1",
+                  "content": "{scenario_title}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735568901365-1",
+              "cells": [
+                {
+                  "id": "cell-1735568901365-1-0",
+                  "content": "Brief Description of Case:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735568901365-1-1",
+                  "content": "{description_of_case}",
+                  "isHeader": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "table-1735569329243",
+          "title": "Learning Objectives",
+          "hasHeader": false,
+          "columns": 2,
+          "rows": [
+            {
+              "id": "row-1735569329243-0",
+              "cells": [
+                {
+                  "id": "cell-1735569329243-0-0",
+                  "content": "Objective 1:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735569329243-0-1",
+                  "content": "{obj_1}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735569329243-1",
+              "cells": [
+                {
+                  "id": "cell-1735569329243-1-0",
+                  "content": "Objective 2:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735569329243-1-1",
+                  "content": "{obj_2}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735569329243-2",
+              "cells": [
+                {
+                  "id": "cell-1735569329243-2-0",
+                  "content": "Objective 3:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735569329243-2-1",
+                  "content": "{obj_3}",
+                  "isHeader": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "table-1735569596551",
+          "title": "Learners, Setting, and Personnel",
+          "hasHeader": false,
+          "columns": 2,
+          "rows": [
+            {
+              "id": "row-1735569596551-0",
+              "cells": [
+                {
+                  "id": "cell-1735569596551-0-0",
+                  "content": "Learner Group:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735569596551-0-1",
+                  "content": "{learner_group}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735569596551-1",
+              "cells": [
+                {
+                  "id": "cell-1735569596551-1-0",
+                  "content": "Location:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735569596551-1-1",
+                  "content": "{location}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735569596551-2",
+              "cells": [
+                {
+                  "id": "cell-1735569596551-2-0",
+                  "content": "Instructors:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735569596551-2-1",
+                  "content": "{instructors}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735569596551-3",
+              "cells": [
+                {
+                  "id": "cell-1735569596551-3-0",
+                  "content": "Embedded Simulated Participants (ESPs)",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735569596551-3-1",
+                  "content": "{esps}",
+                  "isHeader": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "table-1735569680536",
+          "title": "Scenario Development",
+          "hasHeader": false,
+          "columns": 2,
+          "rows": [
+            {
+              "id": "row-1735569680536-0",
+              "cells": [
+                {
+                  "id": "cell-1735569680536-0-0",
+                  "content": "Date of Development:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735569680536-0-1",
+                  "content": "{date_of_dev}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735569680536-1",
+              "cells": [
+                {
+                  "id": "cell-1735569680536-1-0",
+                  "content": "Scenario Developers:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735569680536-1-1",
+                  "content": "{scenario_developers}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735569680536-2",
+              "cells": [
+                {
+                  "id": "cell-1735569680536-2-0",
+                  "content": "Affiliations/Institutions:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735569680536-2-1",
+                  "content": "{affiliations_institutions}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735569680536-3",
+              "cells": [
+                {
+                  "id": "cell-1735569680536-3-0",
+                  "content": "Contact Email:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735569680536-3-1",
+                  "content": "{contact_email}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735569680536-4",
+              "cells": [
+                {
+                  "id": "cell-1735569680536-4-0",
+                  "content": "Last Revision Date:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735569680536-4-1",
+                  "content": "{last_revision_date}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735569680536-5",
+              "cells": [
+                {
+                  "id": "cell-1735569680536-5-0",
+                  "content": "Revised By:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735569680536-5-1",
+                  "content": "{revised_by}",
+                  "isHeader": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "table-1735569693497",
+          "title": "Length of Training",
+          "hasHeader": false,
+          "columns": 2,
+          "rows": [
+            {
+              "id": "row-1735569693497-0",
+              "cells": [
+                {
+                  "id": "cell-1735569693497-0-0",
+                  "content": "Prebrief:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735569693497-0-1",
+                  "content": "{prebrief}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735569693497-1",
+              "cells": [
+                {
+                  "id": "cell-1735569693497-1-0",
+                  "content": "Scenario:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735569693497-1-1",
+                  "content": "{scenario}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735569693497-2",
+              "cells": [
+                {
+                  "id": "cell-1735569693497-2-0",
+                  "content": "Debrief:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735569693497-2-1",
+                  "content": "{debrief}",
+                  "isHeader": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-1735570029477",
+      "title": "Section 2: Set Up",
+      "tables": [
+        {
+          "id": "table-1735570248381",
+          "title": "Key Elements",
+          "hasHeader": false,
+          "columns": 2,
+          "rows": [
+            {
+              "id": "row-1735570248381-0",
+              "cells": [
+                {
+                  "id": "cell-1735570248381-0-0",
+                  "content": "A. Modality (Patient Simulator, Task Trainer, Standardized Patient, Etc.)",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735570248381-0-1",
+                  "content": "{modality}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735570248381-1",
+              "cells": [
+                {
+                  "id": "cell-1735570248381-1-0",
+                  "content": "B. Special Equipment/Supplies (Code cart, cardiac monitor, RSI kit will be in all rooms)",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735570248381-1-1",
+                  "content": "{special_equipment_and_supplies}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735570248381-2",
+              "cells": [
+                {
+                  "id": "cell-1735570248381-2-0",
+                  "content": "C. Required Medication (Medication name, dose)",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735570248381-2-1",
+                  "content": "{required_medication}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735570248381-3",
+              "cells": [
+                {
+                  "id": "cell-1735570248381-3-0",
+                  "content": "D. Moulage (Provide description of any moulage needed for scenario)",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735570248381-3-1",
+                  "content": "{moulage}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735570248381-4",
+              "cells": [
+                {
+                  "id": "cell-1735570248381-4-0",
+                  "content": "E. Patient Monitor (Vital Signs Displayed at Case Onset OR Displayed When Placed on Machine)",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735570248381-4-1",
+                  "content": "{patient_monitor}",
+                  "isHeader": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-1735570337782",
+      "title": "Section 3: Initial Patient Information",
+      "tables": [
+        {
+          "id": "table-1735570412534",
+          "title": "A. Patient Chart",
+          "hasHeader": false,
+          "columns": 2,
+          "rows": [
+            {
+              "id": "row-1735571163919",
+              "cells": [
+                {
+                  "id": "cell-1735571163919-0",
+                  "content": "Patient Name:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735571163919-1",
+                  "content": "{patient_name}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735571288852",
+              "cells": [
+                {
+                  "id": "cell-1735571288852-0",
+                  "content": "Presenting Complaint: ",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735571288852-1",
+                  "content": "{presenting_complaint}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735571290044",
+              "cells": [
+                {
+                  "id": "cell-1735571290044-0",
+                  "content": "Chief Complaint: ",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735571290044-1",
+                  "content": "{chief_complaint}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735571290892",
+              "cells": [
+                {
+                  "id": "cell-1735571290892-0",
+                  "content": "Past Medical History: ",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735571290892-1",
+                  "content": "{past_medical_history}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735571292132",
+              "cells": [
+                {
+                  "id": "cell-1735571292132-0",
+                  "content": "Current Medications: ",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735571292132-1",
+                  "content": "{current_medications}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735571433475",
+              "cells": [
+                {
+                  "id": "cell-1735571433475-0",
+                  "content": "Allergies: ",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735571433475-1",
+                  "content": "{allergies}",
+                  "isHeader": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "table-1735571515740",
+          "title": "B. Vitals",
+          "hasHeader": false,
+          "columns": 8,
+          "rows": [
+            {
+              "id": "row-1735571515740-0",
+              "cells": [
+                {
+                  "id": "cell-1735571515740-0-0",
+                  "content": "Age:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735571515740-0-1",
+                  "content": "{age}",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735571515740-0-2",
+                  "content": "Sex:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735571515740-0-3",
+                  "content": "{sex}",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735571595341-row-1735571515740-0",
+                  "content": "Height/Weight:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735571596725-row-1735571515740-0",
+                  "content": "{height_and_weight}",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735571685278-row-1735571515740-0",
+                  "content": "Temperature:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735571686542-row-1735571515740-0",
+                  "content": "{baseline_temp}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735571515740-1",
+              "cells": [
+                {
+                  "id": "cell-1735571515740-1-0",
+                  "content": "Blood Pressure:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735571515740-1-1",
+                  "content": "{baseline_bp}",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735571515740-1-2",
+                  "content": "Heart Rate:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735571515740-1-3",
+                  "content": "{baseline_hr}",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735571595341-row-1735571515740-1",
+                  "content": "Respiration Rate:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735571596725-row-1735571515740-1",
+                  "content": "{baseline_rr}",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735571685278-row-1735571515740-1",
+                  "content": "spO2:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735571686542-row-1735571515740-1",
+                  "content": "{baseline_spo2}",
+                  "isHeader": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-1735571811900",
+      "title": "Section 4: Extra Patient Information",
+      "tables": [
+        {
+          "id": "table-1735572044149",
+          "title": "A. Further History",
+          "hasHeader": false,
+          "columns": 2,
+          "rows": [
+            {
+              "id": "row-1735572044149-0",
+              "cells": [
+                {
+                  "id": "cell-1735572044149-0-0",
+                  "content": "Patient History (Report to be given at the start of case):",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735572044149-0-1",
+                  "content": "{patient_history}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735572044149-1",
+              "cells": [
+                {
+                  "id": "cell-1735572044149-1-0",
+                  "content": "Additional Information (only if asked by learner):",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735572044149-1-1",
+                  "content": "{additional_information}",
+                  "isHeader": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "table-1735572090922",
+          "title": "B. Physical Exam",
+          "hasHeader": false,
+          "columns": 4,
+          "rows": [
+            {
+              "id": "row-1735572090922-0",
+              "cells": [
+                {
+                  "id": "cell-1735572090922-0-0",
+                  "content": "Cardio: ",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735572090922-0-1",
+                  "content": "{cardio}",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735572090922-0-2",
+                  "content": "Neuro: ",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735572090922-0-3",
+                  "content": "{neuro}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735572090922-1",
+              "cells": [
+                {
+                  "id": "cell-1735572090922-1-0",
+                  "content": "Resp: ",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735572090922-1-1",
+                  "content": "{resp}",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735572090922-1-2",
+                  "content": "Head & Neck: ",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735572090922-1-3",
+                  "content": "{head_and_neck}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735572090922-2",
+              "cells": [
+                {
+                  "id": "cell-1735572090922-2-0",
+                  "content": "Abdo: ",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735572090922-2-1",
+                  "content": "{abdo}",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735572090922-2-2",
+                  "content": "MSK/skin: ",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735572090922-2-3",
+                  "content": "{msk_and_skin}",
+                  "isHeader": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-1735571838423",
+      "title": "Section 5: Embedded Simulation Participant",
+      "tables": [
+        {
+          "id": "table-1735572150928",
+          "title": "Simulation Participant Roles and Scripts",
+          "hasHeader": false,
+          "columns": 2,
+          "rows": [
+            {
+              "id": "row-1735572150928-0",
+              "cells": [
+                {
+                  "id": "cell-1735572150928-0-0",
+                  "content": "Role:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735572150928-0-1",
+                  "content": "{role}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735572150928-1",
+              "cells": [
+                {
+                  "id": "cell-1735572150928-1-0",
+                  "content": "Behavior:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735572150928-1-1",
+                  "content": "{behavior}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735572150928-2",
+              "cells": [
+                {
+                  "id": "cell-1735572150928-2-0",
+                  "content": "Key Moments:",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735572150928-2-1",
+                  "content": "{key_moments}",
+                  "isHeader": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-1735571853272",
+      "title": "Section 6: Scenario Progression",
+      "tables": [
+        {
+          "id": "table-1735573884505",
+          "title": "Scenario States, Modifiers, and Triggers",
+          "hasHeader": true,
+          "columns": 5,
+          "rows": [
+            {
+              "id": "row-1735573884505-header",
+              "cells": [
+                {
+                  "id": "cell-1735573884505-header-0",
+                  "content": "Patient State and Vitals",
+                  "isHeader": true
+                },
+                {
+                  "id": "cell-1735573884505-header-1",
+                  "content": "Patient Status",
+                  "isHeader": true
+                },
+                {
+                  "id": "cell-1735573884505-header-2",
+                  "content": "Learner Actions",
+                  "isHeader": true
+                },
+                {
+                  "id": "cell-1735573884505-header-3",
+                  "content": "State Triggers",
+                  "isHeader": true
+                },
+                {
+                  "id": "cell-1735573884505-header-4",
+                  "content": "Facilitator Notes",
+                  "isHeader": true
+                }
+              ]
+            },
+            {
+              "id": "row-1735573884505-0",
+              "cells": [
+                {
+                  "id": "cell-1735573884505-0-0",
+                  "content": "Baseline State\\nRhythm: {baseline_rhythm}\\nHR: {baseline_hr}\\nBP: {baseline_bp}\\nRR: {baseline_rr}\\nO2: {baseline_spo2}\\nTemp: {baseline_temp}\\nGCS: {baseline_gcs}\\nEtCO2: {baseline_etco2}",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735573884505-0-1",
+                  "content": "{baseline_patient_status}",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735573884505-0-2",
+                  "content": "{baseline_learner_actions}",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735573884505-0-3",
+                  "content": "{baseline_state_triggers}",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735573884505-0-4",
+                  "content": "Learners should attempt to {baseline_learners_should_attempt_to}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735573884505-1",
+              "cells": [
+                {
+                  "id": "cell-1735573884505-1-0",
+                  "content": "State 2\\nRhythm: {state_2_rhythm}\\nHR: {state_2_hr}\\nBP: {state_2_bp}\\nRR: {state_2_rr}\\nO2: {state_2_spo2}\\nTemp: {state_2_temp}\\nGCS: {state_2_gcs}\\nEtCO2: {state_2_etco2}",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735573884505-1-1",
+                  "content": "{state_2_patient_status}",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735573884505-1-2",
+                  "content": "{state_2_learner_actions}",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735573884505-1-3",
+                  "content": "{state_2_triggers}",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735573884505-1-4",
+                  "content": "Learners should attempt to {state_2_learners_should_attempt_to}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735573884505-2",
+              "cells": [
+                {
+                  "id": "cell-1735573884505-2-0",
+                  "content": "State 3\\nRhythm: {state_3_rhythm}\\nHR: {state_3_hr}\\nBP: {state_3_bp}\\nRR: {state_3_rr}\\nO2: {state_3_spo2}\\nTemp: {state_3_temp}\\nGCS: {state_3_gcs}\\nEtCO2: {state_3_etco2}",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735573884505-2-1",
+                  "content": "{state_3_patient_status}",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735573884505-2-2",
+                  "content": "{state_3_learner_actions}",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735573884505-2-3",
+                  "content": "{state_3_triggers}",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735573884505-2-4",
+                  "content": "Learners should attempt to {state_3_learners_should_attempt_to}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735573884505-3",
+              "cells": [
+                {
+                  "id": "cell-1735573884505-3-0",
+                  "content": "State 4\\nRhythm: {state_4_rhythm}\\nHR: {state_4_hr}\\nBP: {state_4_bp}\\nRR: {state_4_rr}\\nO2: {state_4_spo2}\\nTemp: {state_4_temp}\\nGCS: {state_4_gcs}\\nEtCO2: {state_4_etco2}",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735573884505-3-1",
+                  "content": "{state_4_patient_status}",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735573884505-3-2",
+                  "content": "{state_4_learner_actions}",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735573884505-3-3",
+                  "content": "{state_4_triggers}",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735573884505-3-4",
+                  "content": "Learners should attempt to {state_4_learners_should_attempt_to}",
+                  "isHeader": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-1735571880067",
+      "title": "Appendix",
+      "tables": [
+        {
+          "id": "table-1735572203621",
+          "title": "Appendix",
+          "hasHeader": false,
+          "columns": 2,
+          "rows": [
+            {
+              "id": "row-1735572203621-0",
+              "cells": [
+                {
+                  "id": "cell-1735572203621-0-0",
+                  "content": "Appendix A",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735572203621-0-1",
+                  "content": "{insert_any_imaging_labs_ekg_etc}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735572203621-1",
+              "cells": [
+                {
+                  "id": "cell-1735572203621-1-0",
+                  "content": "Appendix B",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735572203621-1-1",
+                  "content": "{instructor_debriefing_tips}",
+                  "isHeader": false
+                }
+              ]
+            },
+            {
+              "id": "row-1735572203621-2",
+              "cells": [
+                {
+                  "id": "cell-1735572203621-2-0",
+                  "content": "Appendix C",
+                  "isHeader": false
+                },
+                {
+                  "id": "cell-1735572203621-2-1",
+                  "content": "{references}",
+                  "isHeader": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

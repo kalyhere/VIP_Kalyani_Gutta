@@ -1,0 +1,96 @@
+services:
+  postgres:
+    image: postgres:15-alpine
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=aimms_web
+      - POSTGRES_USER=aimms_user
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-secure_prod_password_change_this}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U aimms_user -d aimms_web"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+
+  backend:
+    build:
+      context: ./packages/aimms-web-backend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "0.0.0.0:8000:8000"
+    env_file:
+      - ./.env
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+
+  worker:
+    build:
+      context: ./packages/aimms-web-backend
+      dockerfile: Dockerfile.worker
+    restart: unless-stopped
+    env_file:
+      - ./.env
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+
+  virtual-patient-backend:
+    build:
+      context: ./packages/virtual-patient-backend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "0.0.0.0:3001:3000"
+    env_file:
+      - ./.env
+    environment:
+      - PORT=3000
+      - NODE_ENV=production
+      - AIMMS_API_URL=http://backend:8000
+      - AIMMS_BACKEND_URL=http://backend:8000
+
+  suture-analysis-backend:
+    build:
+      context: ./packages/suture-analysis-backend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "0.0.0.0:8001:8001"
+    env_file:
+      - ./.env
+
+  debrief-backend:
+    build:
+      context: ./packages/debrief-backend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "0.0.0.0:8003:8003"
+    env_file:
+      - ./.env
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  postgres_data:
+    external: true
+    name: aimms_postgres_data_prod
+  redis_data:
+    external: true
+    name: aimms_redis_data_prod

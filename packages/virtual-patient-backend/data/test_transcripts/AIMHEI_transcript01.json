@@ -1,0 +1,6 @@
+{
+    "model": "gpt-4o",
+    "enable_finetune": null,
+    "formatting_process": "sonix",
+    "report_type": "str"
+}

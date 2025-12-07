@@ -1,0 +1,14 @@
+artifact_uri: /app/runs/mlflow/284560663426599488/cdf34183e5024bf39f99457497987030/artifacts
+end_time: 1756840594018
+entry_point_name: ''
+experiment_id: '284560663426599488'
+lifecycle_stage: active
+run_id: cdf34183e5024bf39f99457497987030
+run_name: suture_detection3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1756839422799
+status: 3
+tags: []
+user_id: root
