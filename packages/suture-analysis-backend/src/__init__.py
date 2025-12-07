@@ -1,1 +1,0 @@
-"""Suture Analysis Backend Package."""

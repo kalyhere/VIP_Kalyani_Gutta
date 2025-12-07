@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-# Configure pip to use PyTorch CPU-only index
-mkdir -p ~/.pip
-cat > ~/.pip/pip.conf << EOF
-[global]
-index-url = https://download.pytorch.org/whl/cpu
-trusted-host = download.pytorch.org
-EOF
