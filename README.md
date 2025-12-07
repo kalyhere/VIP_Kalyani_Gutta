@@ -23,14 +23,8 @@ npm run dev:build
 ```
 
 That's it! 🎉 The application will be available at:
-- **Main Frontend**: http://localhost:3000
-- **Backend API**: http://localhost:8000
 - **Virtual Patient Frontend**: http://localhost:5174
 - **Virtual Patient Backend**: http://localhost:3001
-- **Suture Analysis Backend**: http://localhost:8001
-- **pgAdmin**: http://localhost:5050 (Email: `admin@example.com`, Password: `admin`)
-- **PostgreSQL Database**: http://localhost:5432 (User: `aimms_user`, Password: `dev`, Database: `aimms_web`)
-- **Redis**: http://localhost:6379
 
 ### Recommended Student Workflow
 ```bash
@@ -55,8 +49,6 @@ Once you run `npm run dev:build`, these test accounts are automatically created:
 
 | Role | Email | Password | Access |
 |------|-------|----------|--------|
-| **Admin** | `admin` | `password` | Full system access |
-| **Faculty** | `faculty` | `password` | Classes, students, assignments |
 | **Student** | `student` | `password` | Assigned cases, AIMHEI |
 
 ### ✅ Verify Your Setup
@@ -69,46 +61,17 @@ Hello world
    ```
    You should see 8 services: `postgres`, `redis`, `backend`, `worker`, `frontend`, `virtual-patient-backend`, `virtual-patient-frontend`, `pgadmin`
 
-2. **Main Frontend Accessible**: Visit [http://localhost:3000](http://localhost:3000)
-   - Should show AIMMS login page
-   - Login with `faculty` / `password`
-
-3. **Virtual Patient Frontend Accessible**: Visit [http://localhost:5174](http://localhost:5174)
+2. **Virtual Patient Frontend Accessible**: Visit [http://localhost:5174](http://localhost:5174)
    - Should show Virtual Patient Simulation interface
    - 3D character model should load
 
-4. **Backend API Working**: Visit [http://localhost:8000/docs](http://localhost:8000/docs)
-   - Should show FastAPI Swagger documentation
-
-5. **Virtual Patient API Working**: Visit [http://localhost:3001](http://localhost:3001)
+3. **Virtual Patient API Working**: Visit [http://localhost:3001](http://localhost:3001)
    - Should show Virtual Patient Backend API status
 
-6. **Database Admin (pgAdmin)**: Visit [http://localhost:5050](http://localhost:5050)
-   - Login with: `admin@example.com` / `admin`
-   - Click on "AIMMS Local Database" server
-   - When prompted for password, enter: `dev`
-   - You can now browse database tables and run SQL queries
-
-7. **Sample Data Loaded**: After login as faculty, you should see:
-   - 3 classes in your dashboard
+7. **Sample Data Loaded**: After login as student, you should see:
+   - classes in your dashboard
    - Medical cases available for assignment
 
-If any step fails, check the [Troubleshooting](#troubleshooting) section below.
-
-## Development Commands
-
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start full development environment with Docker Compose (**Recommended**) |
-| `npm run dev:build` | Rebuild containers and start development environment |
-| `npm run dev:clean` | Stop containers and remove volumes |
-| `npm run stop` | Stop all services |
-| `npm run logs` | View logs from all services |
-| `npm run frontend:dev` | Run main frontend only (requires backend running) |
-| `npm run backend:dev` | Run backend only (requires Redis running) |
-| `npm run backend:worker` | Run Celery worker only (requires Redis running) |
-| `npm run virtual-patient-frontend:dev` | Run virtual patient frontend only |
-| `npm run virtual-patient-backend:dev` | Run virtual patient backend only |
 
 ## Architecture Overview
 
@@ -124,15 +87,6 @@ This monorepo contains four main packages:
   - Student dashboard and assignment tracking
   - Faculty administration tools
 
-### `packages/backend/`
-- **Technology**: FastAPI with Python 3.11
-- **Purpose**: Main API server and background job processing
-- **Port**: 8000
-- **Key Features**:
-  - RESTful API endpoints
-  - AIMHEI transcript processing with Celery
-  - Real-time progress updates via Server-Sent Events
-  - Redis job queue for timeout-free processing
 
 ### `packages/virtual-patient-frontend/`
 - **Technology**: React 18 with Vite and Three.js
@@ -160,9 +114,6 @@ The development environment uses Docker Compose with these services:
 
 - **PostgreSQL**: Database server for application data
 - **Redis**: Job queue and caching
-- **Backend**: FastAPI application server (AIMMS main API)
-- **Worker**: Celery worker for background processing
-- **Frontend**: React development server (AIMMS main UI)
 - **Virtual Patient Backend**: Node.js API server for virtual patient simulation
 - **Virtual Patient Frontend**: React development server for 3D patient interface
 - **pgAdmin**: Database administration tool for viewing and managing PostgreSQL data
@@ -170,104 +121,6 @@ The development environment uses Docker Compose with these services:
 ### **Dependency Isolation**
 
 **Docker (Recommended)**: When using `npm run dev`, all dependencies are installed **inside Docker containers**, providing complete isolation from your host system. No virtual environments needed!
-
-**Local Fallback**: The `npm run install:all` command can install backend dependencies locally for debugging, but Docker is the preferred approach.
-
-## API Documentation
-
-When running locally, visit:
-- **Swagger UI**: http://localhost:8000/docs
-- **ReDoc**: http://localhost:8000/redoc
-
-## Production Deployment
-
-For production deployment documentation, see [docs/DATABASE-BACKUP.md](docs/DATABASE-BACKUP.md).
-
-### Quick Reference Commands
-
-**Database Backups:**
-```bash
-# Create manual backup
-ssh aidset "/home/ec2-user/backup-postgres.sh"
-
-# List backups
-ssh aidset "ls -lh /home/ec2-user/postgres-backups/"
-
-# View backup logs
-ssh aidset "tail -50 /home/ec2-user/postgres-backup.log"
-
-# Download backup
-scp aidset:/home/ec2-user/postgres-backups/aimms_postgres_YYYYMMDD_HHMMSS.sql.gz ./
-```
-
-**Service Management:**
-```bash
-# View running containers
-ssh aidset "docker ps"
-
-# View service logs
-ssh aidset "docker logs aimms-web-backend-1"
-
-# Restart all services
-ssh aidset "cd /home/ec2-user/aimms-web && docker-compose -f docker-compose.prod.yml restart"
-
-# Check API health
-ssh aidset "curl -s https://aimms.colo-prod-aws.arizona.edu/api/health"
-```
-
-**Deployment:**
-```bash
-# Deploy frontend
-bash deploy-frontend.sh
-
-# Deploy backend (pull latest code and rebuild)
-ssh aidset "cd /home/ec2-user/aimms-web && git pull && docker-compose -f docker-compose.prod.yml build backend && docker-compose -f docker-compose.prod.yml up -d backend worker"
-```
-
-## Troubleshooting
-
-### Common Issues
-
-1. **Missing `.env` file**: 
-   - **Error**: `WARNING: The VITE_OPENAI_API_KEY variable is not set`
-   - **Solution**: Create `.env` file in root directory using template from [Environment Setup](#environment-setup)
-
-2. **Browser shows "ERR_CONNECTION_REFUSED"**:
-   - **Error**: `GET http://localhost:5173/ net::ERR_CONNECTION_REFUSED`
-   - **Solution**: Use `npm run dev:build` instead of `npm run dev`, frontend runs on port 3000 in Docker
-
-3. **`docker-compose: command not found`**: 
-   - Install [Docker Desktop](https://www.docker.com/products/docker-desktop/) which includes Docker Compose
-   - Or try `docker compose` (space, not hyphen) if you have newer Docker
-   
-4. **OpenAI API errors**:
-   - **Error**: `Invalid API key` or AIMHEI processing fails
-   - **Solution**: Check your `VITE_OPENAI_API_KEY` in `.env` file is valid
-
-5. **Faculty has no classes**:
-   - **Error**: Faculty dashboard shows empty classes
-   - **Solution**: Run `docker compose -f docker-compose.dev.yml exec backend python -m backend.db.init_db` to seed sample data
-
-6. **Frontend build fails with package lock errors**:
-   - Run `cd packages/frontend && npm install` to regenerate lock file
-   - Then try `npm run dev:build` again
-   
-7. **Database connection errors**: Backend waits for PostgreSQL to be healthy before starting
-8. **Node.js version warnings**: Make sure you have Node.js v20+ installed
-9. **Port conflicts**: Ensure ports 3000, 5432, 6379, 8000 are available
-10. **Docker issues**: Try `npm run dev:clean` then `npm run dev:build`
-11. **Permission errors**: Ensure Docker daemon is running
-
-### Logs
-```bash
-npm run logs
-```
-
-### Clean Reset
-```bash
-npm run dev:clean
-npm run dev:build
-```
 
 ---
 
